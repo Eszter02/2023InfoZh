@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+.hatter{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+        background-image: url(images/brain.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: scroll;
+        background-size: 600px 750px;
+    }
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: darkred;
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+
+.eszter{
+width: 100%;
+margin-top: 20px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+position: absolute;
+top: 0;
+left:50%;
+transform: translateX(-50%);
+transition: bottom 1s, left 1s;
+}
+.eszter img{
+    height: 250px;
+    width: auto;
+    border:5px solid darkred;
+}
+
+
+/*.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+
+}
+*/
