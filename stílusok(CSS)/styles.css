@@ -29,6 +29,8 @@
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
 }
 
 .detel{
