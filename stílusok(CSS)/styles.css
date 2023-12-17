@@ -6,11 +6,11 @@
 
 
 .hatter{
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100vh;
     background-color: white;
-        background-image: url(../images/brain.png);
+        background-image: url(images/brain.png);
         background-repeat: no-repeat;
         background-position: right top;
         background-attachment: scroll;
@@ -22,17 +22,22 @@
 .bme{
     width: 84%;
     margin-top: 20px;
+    display: flex;
     position: absolute;
     top:0;
     left:10%;
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
-    transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
 }
 
 .detel{
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top:60%;
+    left:10%;
+    padding: 20px 0;
     align-items: center;
     justify-content: space-between;
 }
