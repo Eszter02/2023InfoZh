@@ -15,8 +15,6 @@
         background-position: right top;
         background-attachment: scroll;
         background-size: 600px 750px;
-        z-index: -1;
-        opacity: 0.3;
     }
 
 nav{
