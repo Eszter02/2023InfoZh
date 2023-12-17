@@ -34,7 +34,7 @@
 }
 
 .detel{
-    display:contents;
+    display:flex;
     position: absolute;
     top:20%;
     left:10%;
