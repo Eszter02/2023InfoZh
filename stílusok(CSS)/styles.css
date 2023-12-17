@@ -19,7 +19,7 @@
         z-index: -1;
     }
 
-nav{
+.bme{
     display: flex;
     width: 84%;
     margin: auto;
