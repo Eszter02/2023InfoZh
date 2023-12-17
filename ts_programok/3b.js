@@ -17,12 +17,18 @@ var RandomStringSelector = /** @class */ (function () {
     };
     return RandomStringSelector;
 }());
-// Példa használat
-var inputStrings = ["abcde", "fghijk", "lmnopqr", "stuvwx", "yz12345", "67890ab", "cdefghi"];
-try {
-    var selectedRandomStrings = RandomStringSelector.getRandomStrings(inputStrings, 3);
-    console.log('Véletlenszerűen kiválasztott sztringek:', selectedRandomStrings);
-}
-catch (error) {
-    console.error(error.message);
+function szamitas3b() {
+    // Példa használat
+    var inputStrings = ["abcde", "fghijk", "lmnopqr", "stuvwx", "yz12345", "67890ab", "cdefghi"];
+    try {
+        var selectedRandomStrings = RandomStringSelector.getRandomStrings(inputStrings, 3);
+        var sztring = document.getElementById('sztring');
+        var vksz = document.getElementById('vksz');
+        sztring.textContent = "".concat(inputStrings);
+        vksz.textContent = "".concat(selectedRandomStrings);
+        //console.log('Véletlenszerűen kiválasztott sztringek:', selectedRandomStrings);
+    }
+    catch (error) {
+        //console.error(error.message);
+    }
 }

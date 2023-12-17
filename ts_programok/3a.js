@@ -12,13 +12,25 @@ var Parallelogram = /** @class */ (function () {
     };
     return Parallelogram;
 }());
-// Példa használat
-var angle = 40;
-var sideb = 8;
-var sidea = 10;
-var height = sideb * Math.sin(angle);
-var para = new Parallelogram();
-var areaWithHeightAndSide = para.calculateAreaWithHeightAndSide(height, sidea);
-var areaWithAngleAndSides = para.calculateAreaWithAngleAndSides(angle, sidea, sideb);
-console.log("Ter\u00FClet magass\u00E1g \u00E9s oldal alapj\u00E1n: ".concat(areaWithHeightAndSide));
-console.log("Ter\u00FClet sz\u00F6g \u00E9s k\u00E9t oldal alapj\u00E1n: ".concat(areaWithAngleAndSides));
+function szamitas3a() {
+    // Példa használat
+    var angle = 40;
+    var sideb = 8;
+    var sidea = 10;
+    var height = sideb * Math.sin(angle);
+    var para = new Parallelogram();
+    var areaWithHeightAndSide = para.calculateAreaWithHeightAndSide(height, sidea);
+    var areaWithAngleAndSides = para.calculateAreaWithAngleAndSides(angle, sidea, sideb);
+    var alfa = document.getElementById('alfa');
+    var oldala = document.getElementById('oldala');
+    var oldalb = document.getElementById('oldalb');
+    var magas = document.getElementById('magas');
+    var tma = document.getElementById('tma');
+    var tsza = document.getElementById('tsza');
+    alfa.textContent = "".concat(angle);
+    oldala.textContent = "".concat(sidea);
+    oldalb.textContent = "".concat(sideb);
+    magas.textContent = "".concat(height);
+    tma.textContent = "".concat(areaWithHeightAndSide);
+    tsza.textContent = "".concat(areaWithAngleAndSides);
+}

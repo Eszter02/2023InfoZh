@@ -10,17 +10,30 @@ class Parallelogram {
       return side1 * side2 * Math.sin(angle);
     }
   }
-  
-  // Példa használat
-  const angle = 40;
-  const sideb = 8;
-  const sidea = 10;
-  const height = sideb * Math.sin(angle);
 
-  const para = new Parallelogram()
-  
-  const areaWithHeightAndSide = para.calculateAreaWithHeightAndSide(height, sidea);
-  const areaWithAngleAndSides = para.calculateAreaWithAngleAndSides(angle, sidea, sideb);
-  
-  console.log(`Terület magasság és oldal alapján: ${areaWithHeightAndSide}`);
-  console.log(`Terület szög és két oldal alapján: ${areaWithAngleAndSides}`);
+  function szamitas3a() {
+        // Példa használat
+        const angle = 40;
+        const sideb = 8;
+        const sidea = 10;
+        const height = sideb * Math.sin(angle);
+      
+        const para = new Parallelogram()
+        
+        const areaWithHeightAndSide = para.calculateAreaWithHeightAndSide(height, sidea);
+        const areaWithAngleAndSides = para.calculateAreaWithAngleAndSides(angle, sidea, sideb);
+
+        const alfa = document.getElementById('alfa') as HTMLParagraphElement;
+        const oldala = document.getElementById('oldala') as HTMLParagraphElement;
+        const oldalb = document.getElementById('oldalb') as HTMLParagraphElement;
+        const magas = document.getElementById('magas') as HTMLParagraphElement;
+        const tma = document.getElementById('tma') as HTMLParagraphElement;
+        const tsza = document.getElementById('tsza') as HTMLParagraphElement;
+    
+        alfa.textContent = `${angle}`; 
+        oldala.textContent = `${sidea}`; 
+        oldalb.textContent = `${sideb}`; 
+        magas.textContent = `${height}`; 
+        tma.textContent = `${areaWithHeightAndSide}`;
+        tsza.textContent = `${areaWithAngleAndSides}`;
+      }
