@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0px;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.cicak{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+        background-image: url(../images/cats.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: scroll;
+        background-size: 1180px 740px;
+        opacity: 0.3;
+        z-index: -1;
+}
