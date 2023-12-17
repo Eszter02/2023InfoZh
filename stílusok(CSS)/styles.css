@@ -22,7 +22,10 @@
 .bme{
     display: flex;
     width: 84%;
-    margin: auto;
+    margin-top: 20px;
+    position: absolute;
+    top:0;
+    left:10%;
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
